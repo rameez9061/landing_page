@@ -1,0 +1,215 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Aladin", serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/* setting the main height and width  */
+
+.main {
+  width: 100%;
+  height: 100%;
+  position: relative;    /* !position should be relative of parent to hold children  */
+}
+
+
+/* designing the navbar  */
+
+.nav {
+  width: 100%;
+  height: 70px;
+  /* background-color  : lightseagreen; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3vw;
+  border-bottom: 1px solid lightgray;
+}
+
+
+/* designing the logo of navbar  */
+
+.nav h2{
+
+     font-size: 2.5vw;
+}
+
+
+/* designing the list of navbar tasks  */
+
+.lists {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+
+/* cutomizing the children of class list  */
+
+.lists li {
+  list-style: none;
+  cursor: pointer;
+}
+
+/* designing the navbar sign-up button  */
+
+.nav button {
+  padding: 0.5vw 1vw;
+  border: none;
+  background-color: #59e4a8;
+  color: white;
+  cursor: pointer;
+}
+
+/* customizng the menu icon in navbar  */
+
+.lists i {
+  font-weight: 800;
+  display: none;
+}
+
+/* designing the container that holds the content  */
+
+.container{
+
+      height: calc(100% - 70px);
+      width: 100%;
+      /* background-color: lightsalmon; */
+      display: flex;
+      position: relative;
+}
+
+
+/* designing the left side of the container  */
+.container .left{
+     
+      width: 50%;
+      height: 100%;
+      /* background-color: blueviolet; */
+      padding: 3vw 3vw;
+}
+
+/* designing the right side of the container  */
+.container .right{
+
+     width: 50%;
+     height: 100%;
+     /* background-color:yellowgreen; */
+}
+
+
+/* now designing and customizing the content of left container child  */
+
+.container .left h1{
+
+      font-size: 5vw;
+      
+}
+
+.container .left h1 span{
+
+     color:  #59e4a8;
+}
+
+.container .left p{
+
+     margin-top: 1vw;
+     margin-bottom: 2vw;
+     padding-right: 1vw;
+}
+
+.container .left button {
+
+     padding: 0.5vw 1vw ;
+     font-size: 1.2vw;
+     background-color: #59e4a8;
+     border: none;
+     color: white;
+     cursor: pointer;
+}
+
+
+/* now customizing the image in the right container child  */
+
+.right img{
+
+     width: 100%;
+     height: 100%;
+     /* object-fit: cover; */
+}
+
+/* applying media queries  */
+
+@media (max-width: 600px) {
+  .lists li {
+    display: none;
+  }
+
+  .lists button {
+    display: none;
+  }
+
+
+
+
+  .lists i {
+    font-weight: 800;
+    display: block;
+  }
+
+  .container{
+
+   flex-direction: column;
+    
+}
+
+.container .left{
+     
+    width: 100%;
+    height: 50%;
+    /* background-color: blueviolet; */
+    /* padding: 3vw 3vw; */
+    padding-top: 5vw;
+}
+
+
+.container .right{
+
+    width: 100%;
+    height: 50%;
+    /* background-color:yellowgreen; */
+}  
+
+
+.nav h2{
+
+     font-size: 6vw;
+}
+
+.container .left h1{
+
+     font-size: 8vw;
+}
+
+.container .left p{
+
+    font-size: 3vw;
+}
+
+.container .left button {
+
+    padding: 1.5vw 2vw ;
+    font-size: 2.2vw;
+    background-color: #59e4a8;
+    border: none;
+    color: white;
+}
+
+
+}
